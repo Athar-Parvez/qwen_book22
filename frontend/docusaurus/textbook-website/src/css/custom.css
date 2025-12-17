@@ -1,0 +1,110 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Robotics-themed color scheme */
+:root {
+  --ifm-color-primary: #1a75bc;        /* Robotics blue */
+  --ifm-color-primary-dark: #16629c;   /* Darker robotics blue */
+  --ifm-color-primary-darker: #14598f; /* Even darker robotics blue */
+  --ifm-color-primary-darkest: #0f4570; /* Darkest robotics blue */
+  --ifm-color-primary-light: #3c8ccd;   /* Lighter robotics blue */
+  --ifm-color-primary-lighter: #6ba8db; /* Even lighter robotics blue */
+  --ifm-color-primary-lightest: #a5cbea; /* Lightest robotics blue */
+
+  --ifm-color-secondary: #ff6b35;       /* Accent color - robotics orange */
+  --ifm-color-tertiary: #2e8555;        /* Secondary accent - tech green */
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(26, 117, 188, 0.15); /* Match primary color */
+}
+
+/* Dark mode robotics theme */
+[data-theme='dark'] {
+  --ifm-color-primary: #4da6ff;         /* Light robotics blue */
+  --ifm-color-primary-dark: #1a75bc;    /* Standard robotics blue */
+  --ifm-color-primary-darker: #16629c;  /* Darker robotics blue */
+  --ifm-color-primary-darkest: #114e7a; /* Darkest robotics blue */
+  --ifm-color-primary-light: #7fbfff;   /* Lighter robotics blue */
+  --ifm-color-primary-lighter: #b2d9ff; /* Very light robotics blue */
+  --ifm-color-primary-lightest: #e6f2ff; /* Lightest robotics blue */
+
+  --ifm-color-secondary: #ff8c52;       /* Lighter accent color */
+  --ifm-color-tertiary: #4caf7d;        /* Lighter secondary accent */
+
+  --docusaurus-highlighted-code-line-bg: rgba(77, 166, 255, 0.2); /* Match primary color */
+}
+
+/* Additional robotics-themed styles */
+.hero--primary {
+  background: linear-gradient(135deg, #1a75bc 0%, #0f4570 100%);
+}
+
+.button--primary {
+  background: #1a75bc;
+  border-color: #1a75bc;
+}
+
+.button--primary:hover {
+  background: #16629c;
+  border-color: #16629c;
+}
+
+/* Custom styles for robotics content */
+.robotics-card {
+  border: 1px solid var(--ifm-color-primary-light);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(26, 117, 188, 0.05);
+}
+
+.robotics-card h3 {
+  color: var(--ifm-color-primary);
+  border-bottom: 1px solid var(--ifm-color-primary-light);
+  padding-bottom: 0.5rem;
+}
+
+/* Code block enhancements for robotics/ROS content */
+div[class*="codeBlockContainer"] {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Navigation sidebar enhancements */
+.menu__list-item-collapsible:hover {
+  background-color: rgba(26, 117, 188, 0.1);
+  border-radius: 6px;
+}
+
+/* Table styling for robotics specifications */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+table th {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-font-color-base);
+}
+
+/* Blockquote styling for important notes */
+blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: rgba(26, 117, 188, 0.05);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
